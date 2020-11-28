@@ -17,29 +17,30 @@ let message;
 let country;
 
 let answer = prompt("Введите страну назначения");
+answer = answer.toLowerCase();
 
 switch (answer) {
-    case "Китай":
+    case "Китай".toLowerCase():
         price = 100;
         country = "Китай"
         break;
     
-    case "Чили":
+    case "Чили".toLowerCase():
         price = 250;
         country = "Чили"        
         break;
     
-    case "Австралия":
+    case "Австралия".toLowerCase():
         price = 170;
         country = "Австралию"
         break;    
     
-    case "Индия":
+    case "Индия".toLowerCase():
         price = 80;
         country = "Индию"
         break;
     
-    case "Ямайка":
+    case "Ямайка".toLowerCase():
         price = 120;
         country = "Ямайку"
         break;  

@@ -29,7 +29,7 @@ else if (totalPrice > credit) {
 }
 else if (totalPrice <= credit) {
     droidsLeft = credit - amount * pricePerDroid;
-    message = "Вы купили " + amount + " дроидов, на счету осталось " + droidsLeft + " кредитов.";
+    message = `Вы купили ${amount} дроидов, на счету осталось ${droidsLeft} кредитов.`;
     }
 
 alert(message);

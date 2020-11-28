@@ -20,6 +20,7 @@ let answer = prompt("Введите страну назначения");
 answer = answer.toLowerCase();
 
 switch (answer) {
+    
     case "Китай".toLowerCase():
         price = 100;
         country = "Китай"

@@ -11,3 +11,45 @@
 // Австралия - 170 кредитов
 // Индия - 80 кредитов
 // Ямайка - 120 кредитов
+
+let price;
+let message;
+let country;
+
+let answer = prompt("Введите страну назначения");
+
+switch (answer) {
+    case "Китай":
+        price = 100;
+        country = "Китай"
+        break;
+    
+    case "Чили":
+        price = 250;
+        country = "Чили"        
+        break;
+    
+    case "Австралия":
+        price = 170;
+        country = "Австралию"
+        break;    
+    
+    case "Индия":
+        price = 80;
+        country = "Индию"
+        break;
+    
+    case "Ямайка":
+        price = 120;
+        country = "Ямайку"
+        break;  
+
+    default:
+        message = `В вашей стране доставка не доступна`;
+        alert(message);
+}
+
+if (!message) {
+    message = `Доставка в ${country} будет стоить ${price} кредитов`;
+    alert(message);
+}

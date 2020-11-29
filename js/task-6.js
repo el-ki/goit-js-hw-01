@@ -32,3 +32,5 @@ do {
    
 message = `Общая сумма чисел равна ${total}`;
 alert(message);
+
+

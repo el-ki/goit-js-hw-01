@@ -17,41 +17,46 @@ let message;
 let country;
 
 let answer = prompt("Введите страну назначения");
-answer = answer.toLowerCase();
 
 
-switch (answer) {
+if (answer === null) {
+    message = "Отменено пользователем!";
+    alert(message);
+}
+else {
+    answer = answer.toLowerCase();
+    switch (answer) {
 
-    case "Китай".toLowerCase():
-        price = 100;
-        country = "Китай"
-        break;
+        case "Китай".toLowerCase():
+            price = 100;
+            country = "Китай"
+            break;
     
-    case "Чили".toLowerCase():
-        price = 250;
-        country = "Чили"        
-        break;
+        case "Чили".toLowerCase():
+            price = 250;
+            country = "Чили"
+            break;
     
-    case "Австралия".toLowerCase():
-        price = 170;
-        country = "Австралию"
-        break;    
+        case "Австралия".toLowerCase():
+            price = 170;
+            country = "Австралию"
+            break;
     
-    case "Индия".toLowerCase():
-        price = 80;
-        country = "Индию"
-        break;
+        case "Индия".toLowerCase():
+            price = 80;
+            country = "Индию"
+            break;
     
-    case "Ямайка".toLowerCase():
-        price = 120;
-        country = "Ямайку"
-        break;  
+        case "Ямайка".toLowerCase():
+            price = 120;
+            country = "Ямайку"
+            break;
 
-    default:
-        message = `В вашей стране доставка не доступна`;
-        alert(message);
+        default:
+            message = `В вашей стране доставка не доступна`;
+            alert(message);
     }
-    
+}
 if (!message) {
     message = `Доставка в ${country} будет стоить ${price} кредитов`;
     alert(message);

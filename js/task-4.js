@@ -27,8 +27,8 @@ else if (totalPrice > credit) {
     
     message = "Недостаточно средств на счету!";
 }
-else if (totalPrice <= credit) {
-    droidsLeft = credit - amount * pricePerDroid;
+else {
+    droidsLeft = credit - totalPrice;
     message = `Вы купили ${amount} дроидов, на счету осталось ${droidsLeft} кредитов.`;
     }
 

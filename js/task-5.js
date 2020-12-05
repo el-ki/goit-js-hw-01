@@ -24,8 +24,8 @@ if (answer === null) {
     alert(message);
 }
 else {
-    answer = answer.toLowerCase();
-    switch (answer) {
+    let answerToLowerCase = answer.toLowerCase();
+    switch (answerToLowerCase) {
 
         case "Китай".toLowerCase():
             price = 100;
